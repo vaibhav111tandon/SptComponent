@@ -1,0 +1,112 @@
+.maincomponent{
+    width: 50%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #ccc;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.maincomponent__header{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.maincomponent__header > input {
+    width: 60%;
+    height: 40px;
+    border: solid 1px lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+    background-color: #F2F2F2;
+    outline: none;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+}
+
+.maincomponent__dropdown {
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px lightgray;
+    border-bottom: solid 1px lightgray;
+    background-color: #F2F2F2;
+}
+
+.maincomponent__header > button {
+    width: 18%;
+    color: white;
+    background-color: #1F30A1;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 1px #1F30A1;
+    cursor: pointer;
+}
+
+.maincomponent__typeahead{
+    position: absolute;
+    background-color: white;
+    top: 65px;
+    width: 50%;
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.typeahead__list{
+    padding: 5px 0px 5px 10px; 
+}
+
+.typeahead__list:hover{
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+.open{
+    display: visible;
+}
+
+.close{
+    display: none;
+}
+
+.maincomponent__content{
+    height: 225px;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+.maincomponent__dropdown__container{
+    position: absolute;
+    right: 150px;
+    top: 65px;
+    width: 300px;
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+    background-color: white;
+    z-index: 999999;
+}
+
+.maincomponent__dropdown__container__list{
+    height: 50px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.maincomponent__dropdown__container__list:hover{
+    background-color: #efefef;
+}
+
+.d_open{
+    display: visible;
+}
+
+.d_close{
+    display: none;
+}
